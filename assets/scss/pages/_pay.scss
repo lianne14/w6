@@ -1,0 +1,15 @@
+.pay-list::before {
+    width: 100%;
+    height: 1px;
+    z-index: -1;
+    background-color: #000;
+    position: absolute;
+    top: 30%;
+    content: "";
+}
+
+.step{
+    background-color: #EAE9E1;
+    z-index: 1;
+    border: solid 1px #000;
+}

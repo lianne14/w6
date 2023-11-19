@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO</title>
+    <link rel="icon" href="../assets/images/logo.ico" type="image/x-icon"/>
+    <!-- iconfont -->
+    <link rel="stylesheet" href="../assets/icofont/icofont.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-6 mx-auto text-center mt-12">
+                <img src="../assets/images/sparkler.png" alt="sparkler" style="height: 36px; width: 36px;">
+                <p class="fs-5 mt-4">會員登入</p>
+            </div>
+        </div>
+
+        <div class="row font-TC">
+          <form class="col col-lg-4 mx-auto lokiValidation" novalidate>
+            <label class="form-label">帳號</label>
+            <input class="form-control border-2 border py-2" type="text" placeholder="請輸入帳號" required>
+            <div class="valid-feedback">帳號正確</div>
+            <div class="invalid-feedback">帳號錯誤</div>
+            
+            <label class="form-label mt-3">密碼</label>
+            <input class="form-control border-2 border py-2" type="password" placeholder="請輸入密碼" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">帳號錯誤</div>
+            <button class="full text-center text-light bg-dark my-8 py-3">登入 >></button>
+          </form>
+        </div>
+        
+    </div>
+
+    <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+
+  <script>
+    document.querySelectorAll('.lokiValidation').forEach(function (nod) {  //找到所有持有指定 class 之各項元素
+      nod.addEventListener('submit', function (event) { //監測 submit 時，做以下事情
+        if (!this.checkValidity()) { //如果這個元素的 checkValidity 為 false，代表驗證不通過
+          event.preventDefault(); //取消當下的 event 預設行為
+          event.stopPropagation(); //取消當下的傳遞與冒泡事件
+        }
+        this.classList.add('was-validated'); //顯示驗證文字結果，出現之場合看個人需求
+      });
+    });
+  </script>
+  </body>
+</html>
+ 

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO</title>
+    <link rel="icon" href="../assets/images/logo.ico" type="image/x-icon"/>
+    <!-- iconfont -->
+    <link rel="stylesheet" href="../assets/icofont/icofont.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    
+    <div class="container">
+      <nav aria-label="breadcrumb row">
+        <ol class="breadcrumb col-lg-7 mx-auto mt-8">
+          <li class="breadcrumb-item opacity-75"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item opacity-75"><a href="checkout.html">訂單確認</a></li>
+          <li class="breadcrumb-item opacity-75"><a href="payment.html">結帳付款</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">訂購結果</a></li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row pos">
+        <div class="col-lg-6 mx-auto">
+          <ol class="list-unstyled d-flex justify-content-between pay-list mt-10 position-relative">
+            <a href="checkout.html">
+              <li>
+                <p class="py-5 py-lg-4 fs-7 fs-lg-9 text-warning bg-dark text-center"><i class="icofont-verification-check"></i></p>
+                <p class="mt-2">訂單確認</p>
+              </li>
+            </a>
+            <a href="payment.html">
+              <li>
+                <p class="py-5 py-lg-4 fs-7 fs-lg-9 text-warning bg-dark text-center"><i class="icofont-verification-check"></i></p>
+                <p class="mt-2">結帳付款</p>
+              </li>
+            </a>
+            <li>
+              <p class="step py-5 py-lg-4 fs-7 fs-lg-9 text-center">3</p>
+              <p class="mt-2">訂購結果</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="row mt-9">
+        <div class="col col-lg-6 mx-auto text-center">
+          <i class="icofont-check-circled fs-1 text-success"></i>
+          <p class="fs-3 text-center mb-8">訂購成功</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col col-lg-6 mx-auto">
+          <table class="table">
+            <tbody class="border-top">
+              <tr class="">
+                <th scope="row">訂單編號</th>
+                <td class="text-end font-TC">892746123</td>
+              </tr>
+              <tr>
+                <th scope="row">訂購時間</th>
+                <td class="text-end font-TC">2023/04/28 14:30</td>
+              </tr>
+              <tr>
+                <th scope="row">票券</th>
+                <td class="text-end font-TC">改頭換面票（含大改造）$8000</td>
+              </tr>
+              <tr>
+                <th scope="row">取票序號</th>
+                <td class="text-end font-TC text-danger">95G54J4434</td>
+              </tr>
+              <tr>
+                <th scope="row">取票號碼</th>
+                <td class="text-end font-TC text-danger">04597101</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="font-TC text-gray">請至 7-Eleven 完成取票，請於 ibon 點選【購票/取票/訂房】>【售票系統】>【取票】<br> >【拓元售票系統】。<br>
+            若您未前往取票，本筆交易仍視為完成，不可取消訂單。<br>
+            若需退票，請按照退票辦法進行申請。</p>
+        </div>
+      </div>
+
+    </div>
+
+
+
+    <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  </body>
+</html>
+ 

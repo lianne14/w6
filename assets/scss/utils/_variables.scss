@@ -396,6 +396,7 @@ $spacers: (
   9: $spacer * 3, //16*3=48px
   10: $spacer * 3.625, //16*3.625=58px
   11: $spacer * 14, //16*14=224px
+  12: $spacer * 7, //16*7=112px
 ) !default; //custom
 // scss-docs-end spacer-variables-maps
 
@@ -606,6 +607,7 @@ $font-sizes: (
   6: $font-size-base * 1.125, //16*1.125=18px
   7: $font-size-base ,//16px
   8: $font-size-base * 0.875, //16*0.875=14px
+  9: $font-size-base * 1.25, //16*1.25=20px
 ) !default;
 // $font-size-base 預設為 1rem，也就是 16px
 // 所以 .fs-1 就是 16 * 4 = 64px
@@ -1505,9 +1507,12 @@ $progress-bar-transition:           width .6s ease !default;
 // List group
 
 // scss-docs-start list-group-variables
-$list-group-color:                  $gray-900 !default;
-$list-group-bg:                     $white !default;
-$list-group-border-color:           rgba($black, .125) !default;
+//$list-group-color:                  $gray-900dark !default;
+$list-group-color:                  none !default; //custom
+//$list-group-bg:                     $white !default;
+$list-group-bg:                     none !default; //custom
+//$list-group-border-color:           rgba($black, .125) !default;
+$list-group-border-color:           none !default; //custom
 $list-group-border-width:           $border-width !default;
 $list-group-border-radius:          $border-radius !default;
 
@@ -1563,7 +1568,8 @@ $breadcrumb-margin-bottom:          1rem !default;
 $breadcrumb-bg:                     null !default;
 $breadcrumb-divider-color:          $gray-600 !default;
 $breadcrumb-active-color:           $gray-600 !default;
-$breadcrumb-divider:                quote("/") !default;
+//$breadcrumb-divider:                quote("/") !default;
+$breadcrumb-divider:                quote(">") !default; //custom
 $breadcrumb-divider-flipped:        $breadcrumb-divider !default;
 $breadcrumb-border-radius:          null !default;
 // scss-docs-end breadcrumb-variables

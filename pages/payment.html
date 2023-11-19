@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>7TAO</title>
+    <link rel="icon" href="../assets/images/logo.ico" type="image/x-icon"/>
+    <!-- iconfont -->
+    <link rel="stylesheet" href="../assets/icofont/icofont.css">
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+  
+    <div class="container">
+      <nav aria-label="breadcrumb row">
+        <ol class="breadcrumb col-lg-7 mx-auto mt-8">
+          <li class="breadcrumb-item opacity-75"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item opacity-75"><a href="checkout.html">訂單確認</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">結帳付款</a></li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row pos">
+        <div class="col-lg-6 mx-auto">
+          <ol class="list-unstyled d-flex justify-content-between pay-list mt-9 position-relative">
+            <a href="checkout.html">
+              <li>
+                <p class="py-5 py-lg-4 fs-7 fs-lg-9 text-warning bg-dark text-center"><i class="icofont-verification-check"></i></p>
+                <p class="mt-2">訂單確認</p>
+              </li>
+            </a>
+            <li>
+              <p class="py-5 py-lg-4 fs-7 fs-lg-9 text-warning bg-dark text-center">2</p>
+              <p class="mt-2">結帳付款</p>
+            </li>
+            <a href="done.html">
+              <li>
+                <p class="step py-5 py-lg-4 fs-7 fs-lg-9 text-center">3</p>
+                <p class="mt-2">訂購結果</p>
+              </li>
+            </a>
+          </ol>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-lg-6 mx-auto">
+          <p class="fs-3 text-center mb-8 mt-9">返老還童-制服聯誼</p>
+        </div>
+      </div>
+      
+      <div class="row text-center">
+        <div class="col col-lg-7 mx-auto">
+          <p class="text-warning text-lg-nowrap bg-dark py-2 px-2 px-lg-0">您的訂單已保留，請在2023/5/30 04:32 前完成繳費。若逾期未繳款，系統將取消您的訂單。</p>
+        </div>
+      </div>
+
+      <div class="row mt-8">
+        <div class="col col-lg-6 mx-auto">
+          <table class="table">
+            <tbody class="border-top">
+              <tr class="">
+                <th scope="row">訂單編號</th>
+                <td class="text-end font-TC">892746123</td>
+              </tr>
+              <tr>
+                <th scope="row">票券</th>
+                <td class="text-end font-TC">改頭換面票（含大改造）$8000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+          
+      <div class="text-center mt-3">
+        <img src="../assets/images/sparkler.png" alt="sparkler">
+        <p class="fs-5 mt-7">結帳資訊</p>
+      </div>
+
+      <div class="row">
+        <form class="col col-lg-6 mx-auto">
+          <div class="mb-3 font-TC">
+            <label for="name" class="form-label">取票資訊</label>
+            <input type="name" class="form-control py-2 border border-2" placeholder="請輸入身分證字號或護照號碼">
+            <p>請輸入您的 <span class="text-danger"> 身分證字號 </span> 供取票使用，外籍人士請輸入 <span class="text-danger"> 護照號碼 </span></p>
+          </div>
+        </form>
+      </div>
+
+      <div class="row">
+        <form class="col col-lg-6 mx-auto font-TC">
+          <label for="payment">付款方式</label>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="" id="" value="option1">
+            <label class="form-check-label" for="credit">
+              信用卡
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="" id="" value="option2">
+            <label class="form-check-label" for="ATM">
+              ATM虛擬帳號
+            </label>
+          </div>
+        </form>
+      </div>
+  </div>
+
+
+
+    <%- include('./layout/footer'); -%>
+
+  <script type="module" src="../main.js"></script>
+  <!-- JavaScript Bundle with Popper -->
+  </body>
+</html>
+ 

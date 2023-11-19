@@ -13,7 +13,10 @@
 // @import './components/custom-pagination'; //rwd 會有 x 軸，所以先拿掉，這邊使用 _variables.css 修改
 @import './layout/eventcard';
 @import './pages/index';  
+@import './pages/active';
+@import './pages/pay';
 @import './layout/swiper';
+@import './components/transform';
 
 
 @import url("https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js");

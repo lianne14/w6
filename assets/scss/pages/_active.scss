@@ -1,0 +1,33 @@
+.eventbanner{
+    background-image: url('/assets/images/event/09.jpg');
+    height: 550px;
+    background-size: cover;
+}
+
+.date{
+    position: relative;
+    padding-bottom: 70px;
+
+    @include mobile{
+        padding-bottom: 0;
+     }
+    
+}
+
+.date::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    background-color: black;
+    height: 60px;
+    width: 2px;
+    display: block;
+    transform: translate(-50%) rotate(30deg);
+
+    @include mobile{
+       height: 50px;
+       top: 10%;
+       left: 150%;
+    }
+}
+
