@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO</title>
+    <link rel="icon" href="/w6/assets/logo-7b5d5612.ico" type="image/x-icon"/>
+    <!-- iconfont -->
+    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script type="module" crossorigin src="/w6/assets/main-987b20fc.js"></script>
+    <link rel="stylesheet" href="/w6/assets/main-d12d8765.css">
+  </head>
+  <body>
+    <!-- 貼了好幾次bs5 collapse 但是都一樣打開後收不起來 ( 收合原因 : index.html 多一條 js cdn 移除即可 ) -->
+<header class="navbar navbar-expand-lg navbar-light border-bottom border-dark border-3">
+      <div class="container">
+        <!-- logo -->
+        <!-- 每一頁都要有一個 h1 -->
+        <h1><a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="logo" class="me-3">
+          <p class="fs-4 d-lg-block d-none me-2">7TAO</p>
+          <p class="fs-7 me-3">活動訂票網</p>
+        </a></h1>
+  
+        <!-- search -->
+        <form class="d-flex font-TC">
+          <input class="form-control border-dark" type="search" placeholder="探索活動" aria-label="Search">
+          <button class="btn btn-dark border-2">
+              <i class="icofont-search-1 text-warning"></i>
+          </button>
+        </form>
+        
+        <!-- 因為使用絕對定位 collapsed 時會塌陷，但是目前這邊看縮小到 305px 是不會造成推擠的 -->
+        <button class="collapsed navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-dark pe-4" aria-current="page" href="#">
+                  <i class="icofont-ui-file "></i>
+                  REGISTER
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark pe-4" aria-current="page" href="login.html">
+                  <i class="icofont-ui-user"></i>
+                  LOGIN
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+</header>
+
+    <div class="container">
+      <nav aria-label="breadcrumb row">
+        <ol class="breadcrumb col-lg-7 mx-auto mt-8">
+          <li class="breadcrumb-item opacity-75"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">訂單確認</a></li>
+        </ol>
+      </nav>
+    </div>
+
+    <div class="container">
+
+      <!-- 進度條 -->
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <ol class="list-unstyled d-flex justify-content-between pay-list mt-10 position-relative">
+            <li>
+              <p class="py-5 py-lg-4 fs-7 fs-lg-9 text-warning bg-dark text-center">1</p>
+              <p class="mt-2">訂單確認</p>
+            </li>
+            <a href="payment.html">
+              <li>
+                <p class="step py-5 py-lg-4 fs-7 fs-lg-9 text-center">2</p>
+                <p class="mt-2">結帳付款</p>
+              </li>
+           </a>
+           <a href="done.html">
+            <li>
+              <p class="step py-5 py-lg-4 fs-7 fs-lg-9 text-center">3</p>
+              <p class="mt-2">訂購結果</p>
+            </li>
+          </a>
+          </ol>
+        </div>
+      </div>
+
+      <!-- 訂購資訊 -->
+      <div class="row">
+        <div class="col col-lg-6 mx-auto">
+          <p class="fs-3 text-center mb-8 mt-9">返老還童-制服聯誼</p>
+          <table class="table">
+            <tbody class="border-top">
+              <tr class="">
+                <th scope="row">日期</th>
+                <td class="text-end font-TC">2023/5/12</td>
+              </tr>
+              <tr>
+                <th scope="row">票種</th>
+                <td class="text-end font-TC">改頭換面票（含大改造）</td>
+              </tr>
+              <tr>
+                <th scope="row">票價</th>
+                <td class="text-end font-TC">$8000</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 訂購人資料 -->
+      <div class="text-center mt-3">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANgSURBVHgB7ZvdddpAEIUHBM+og2w6UAm4EzqIO4g7cDrAHTgdkA6wK0AdGL/xACh38K7OsJHE2hHMSvCds0cSEovmzuzfSBDdUCW1RY0h6ZKhGFJEVYAkSQxKRoqMSJGiKAwpNwFVAQaDAXv/jRRRFQBMEAXfSBFtAQyigK4WdIAFF1JEcxSQnZ8hJTQFMBQBUUTAaDQypISaADwJcvt2PqCCmgAwOq3avzSxdII3AUiJKATAZGhCSqgJAKNVF0GO1gRArz6jz43t0uuGwpna32qF1gSAR3Pc2Go4HP6k85Ch/gWX3W73h2LE3iDP71d0wquY/CzdWsBeXwtE/eGuxfceKFbG43EmjHprClU2OkCAVIhaQIgVxQ5u8l4YVtQ1iQABjLwG9XDixFAXkF6zYftYcU2TAMY7X7TZ8V2ClMPVM2AuL7BNpGwu4tQ/xkfd7hswFSIs3Envc5cUqTL+F3UYUxcJVQLA2Bfv8yfqAZUi+AKgPNdFSx9gEZYVRteVJ+ojFV6uKnO6IKE5aSO27M3DQ03eIpkxkdf42R276PnqwmeN+tbyGPW547U9ft/v94d9u83tObdtxAmQWgMydEQZG4XCT21S/IChDgM7cl6n0IeYrxCJ97m88GflYgiG87STrIqpULrz2JTbmiOWbcSUvbQttAmk+JLhijjEbYWyCZRh7s7J73517W/D/8gR1ptMbo/LJsBO4/Nw5uHcZrPJKSa4dw/oBJ+pjyBa5qHDIA+Z1JWFTwj+4qhmOPSj42ROoRP4nscx976VU+HeiQBjHz3jS4OqBLCfL3ohAidC6oxnkvrlcF0kRJFFDgI3PGsy3l6z8gw8gpfBXV0cGendKuOZJCAnyIkQT8h7ih3PMPZaGnDdqqG+mRSUE68UK7Ld40YbvZUcJzyXJ6qWOYVom4IRN3jSS15vH2SUaxLYTqkl2nw0NsU8/A5Pbe7oY6XVOtvt9gH1f9d8oaI1ENJyqPtNSmi/LO1Qe1tUU4BymYuQficlohCAAlJX5+ImACkhU26a6Tc1ATCc5W5fpLkujmYTyN0Oxver7AMkOV0jfjJEA+0/TOSkjPZ/hvxHXxdHtQ/AA41XbNRmgYx2E+AIyEkR7SZwlmXzZ0hIEXifR4KNfWJ7lfzPuwM32uAvhWS8ZdBSZJIAAAAASUVORK5CYII=" alt="sparkler">
+        <p class="fs-5 mt-7">聯絡人資料</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+      <form class="col col-lg-6 mx-auto">
+        <div class="mb-3 font-TC">
+          <label for="name" class="form-label">聯絡人姓名</label>
+          <input type="name" class="form-control border border-2" placeholder="請輸入聯絡人名稱">
+        </div>
+        <div class="mb-3 font-TC">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="email" class="form-control border border-2" id="exampleInputEmail1" placeholder="請輸入Email">
+        </div>
+        <div class="mb-3 font-TC">
+          <label for="phone" class="form-label">手機</label>
+          <input type="phone" class="form-control border border-2" placeholder="請輸入手機號碼">
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-dark col-8 pt-3 mt-8">確認表單資料>></button>
+          <a href="#" class="font-TC mt-5 d-block">取消購票</a>
+        </div>
+      </form>
+      </div>
+    </div>
+
+
+
+    <footer class="text-center border-top border-3 mt-60">
+    <div class="container">
+        <p class="font-TC fs-8 fs-lg-6 py-8">© 7TAO七逃. All Rights Reserved</p>
+    </div>
+</footer>
+  
+  <!-- JavaScript Bundle with Popper -->
+  </body>
+</html>
+ 

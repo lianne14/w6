@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7TAO</title>
+    <link rel="icon" href="/w6/assets/logo-7b5d5612.ico" type="image/x-icon"/>
+    <!-- iconfont -->
+    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script type="module" crossorigin src="/w6/assets/main-987b20fc.js"></script>
+    <link rel="stylesheet" href="/w6/assets/main-d12d8765.css">
+  </head>
+  <body>
+    <!-- 貼了好幾次bs5 collapse 但是都一樣打開後收不起來 ( 收合原因 : index.html 多一條 js cdn 移除即可 ) -->
+<header class="navbar navbar-expand-lg navbar-light border-bottom border-dark border-3">
+      <div class="container">
+        <!-- logo -->
+        <!-- 每一頁都要有一個 h1 -->
+        <h1><a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGoAAABqCAYAAABUIcSXAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATESURBVHgB7Z0xTFNRFIYvtBo0xldDjCEOJXFwk0Gjmw4aNnUgsukgkUkcCGyEwbhpHIAJooOOxgHYTBx0w+hQNxOH1sQQVLRFo0RRvP+jr719YGmxlPufnC8x9jXPBt/HOfeccx+PlkQisWoU72k1CgUqigQVRUIy/sbyStooO09bMldxrBFFgooiQUWRoKJIUFEkqCgSVBQJKooEFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJIgTlcn8NLnsipGGOFGF/B/z2sqSRtIIA5JWTYuRhjhRuexvI/GnHsSJyubkrU9AnCisUfgjDXmpDxElMPcJXKNkpj5R5bmb8qQJEyVKaiEB5EaUMGnCRJWrCPRTkhAlKi+wLI+QFVGFchTlC7KkeS+qnijJO6mv1qYXn88Qid6Lwnj15PF58/zZsmkkkHPrZsF0n10wqZT/icX7rzCwF/HCxT3hBR0e/FL1XLd3qtZHQfqpE/NWVN7cuXvAMECxRg3c2G/SnUkzPrZkjh55/1/N7IT9DEjHZ1y3n3v6TJthgEIUomrqXnv4Gv0RomFm+oepl2tXF81QMSrT6SRNNAGaqg/f+beLFxbrS2/Ph3CNcXGbXLfqw/mIoocPvoXHWJOePD1kmKAqz5ECL1/ZVzrGGhOXFeFWff19ixXFyKSNTqRSJuj6qKn77RXrSjVZAAXIzPT30vHIaMoWJ3sNG5QN76PHBysuNmSNj31dd97a+0ulY0gaGQ0MIy3xBysyPbQK0eKKqAabJFEPrUJxUcvFr/U8n/FmRY16I1Ru0eS7UCiPd9zeCRVdPfdFzNpSftYp51Gal14XiwpUgkHQGrYCqVRL+DfO82Vq0bTUhwudyfwy76yIrH29JmQllOH7bixkQlokr9MeH+vaFR53de0228GOpT4IwXdqdOcJXjHM2CIQ2eXbOlfDiE4Fzfv6vSkmcCEQbfni7V6YhGPbIpqIV8zxYru3mw1s3XI+SnER5dRn012QKL6XKKXHneq34hHlzRqVCteG+tMIZne1iGIvJqirPvRJQ5tM1KPzhms4z2doRcUnEuiT3BTnzgYB+q1LPR9pt+spRcUlYbtio9Q2EHt/1o6Seq0sRuhEYXvDlYRRUrXtivhEAusZtjvYoBKFyq+/71PpGOltsrhPBYJ/lPtxWdju2Gg26DNUorrPLZTWGGx3YE/J7cXcvsadPgDIwjA3On948HPD78PYTmhEoWqLeikUCdjuqJfzNk3Ovewo9UZIgSzFBYUofOejakOUIIpQJGwVSHrz9nD4GWicJ0hSIIUo9EpYY+ZedVS9GcWdImw2UUBUQjo2FRmiyvv9aIyT4mtRo4D0F1a+imoAQR2C1oa+W/l3egNmU4mGqqCZk+1mIPYRO250SUCUKGxPRAREe121IEuU0+SqKBLikwl2hKW+shymbf5aEPeciVCWPhDEf3A/hLRoAjIjSiDi/ledtojQx8ARgF5KH6xIQDqNO1jliRK36ka3GkuD+sduJKO/K54UFUWCiiJBRZGgokhQUSSoKBJUFAkqigQVRYKKIkFFkaCiSFBRJKgoElQUCSqKBBVFgooiQUWRoKJIWHcXkuInGlEkqCgSVBQJfwFJWMcKLx/BoQAAAABJRU5ErkJggg==" alt="logo" class="me-3">
+          <p class="fs-4 d-lg-block d-none me-2">7TAO</p>
+          <p class="fs-7 me-3">活動訂票網</p>
+        </a></h1>
+  
+        <!-- search -->
+        <form class="d-flex font-TC">
+          <input class="form-control border-dark" type="search" placeholder="探索活動" aria-label="Search">
+          <button class="btn btn-dark border-2">
+              <i class="icofont-search-1 text-warning"></i>
+          </button>
+        </form>
+        
+        <!-- 因為使用絕對定位 collapsed 時會塌陷，但是目前這邊看縮小到 305px 是不會造成推擠的 -->
+        <button class="collapsed navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-dark pe-4" aria-current="page" href="#">
+                  <i class="icofont-ui-file "></i>
+                  REGISTER
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-dark pe-4" aria-current="page" href="login.html">
+                  <i class="icofont-ui-user"></i>
+                  LOGIN
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+</header>
+
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-8">
+          <li class="breadcrumb-item opacity-75"><a href="index.html">首頁</a></li>
+          <li class="breadcrumb-item opacity-75"><a href="event.html">活動列表</a></li>
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">返老還童-制服聯誼</a></li>
+        </ol>
+      </nav>
+    </div>
+
+
+    <div class="container">
+      <div class="row mt-0 mt-lg-8 gx-6">
+        <div class="col-12 col-lg-10">
+          <div class="border border-2">
+            <div class="p-4">
+              <picture class="d-block eventbanner"></picture>
+            </div>
+          </div>
+        </div>
+        
+        <div class="d-flex d-lg-block flex-row align-items-stretch align-items-center col-12 col-lg-2 fs-5 fs-sm-3 text-center mt-3 mt-lg-0">
+          <div class="col-4 col-lg-12 border border-2">
+            <p class="py-8">2023</p>
+          </div>
+
+          <div class="col-8 col-lg-12 border border-2 mt-lg-5">
+            <div class="py-8 d-flex d-lg-block flex-row justify-content-around">
+              <div class="date">
+                <p>MAY</p>
+                <p>19</p>
+              </div>
+              <div>
+                <p class="time">12:00</p>
+                <p>23:00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="container">
+
+      <h2 class="fs-lg-1 mt-8">返老還童-制服聯誼</h2>
+      <p class="font-TC mt-4">穿上制服，無年齡限制，一起走上街頭、尋找青春才有的純愛心動！</p>
+      <aside class="btn-group d-flex flex-wrap mt-4" role="group" aria-label="teg">
+        <button type="button" class="teg m-2 px-7">聯誼</button>
+        <button type="button" class="teg m-2 px-7">美食</button>
+        <button type="button" class="teg m-2 px-7">戶外</button>
+        <button type="button" class="teg m-2 px-7">交通旅遊</button>
+      </aside>
+
+      <div class="border border-2 mt-8">
+        <div class="p-7 font-TC">
+          <p>
+          想回到過去？試著讓故事繼續？<br>
+          <br>
+          由戀愛家教「艾德溫」主辦策劃，讓各位在安排好的青春行程中擁有自然的純愛互動體驗，互相餵食餅乾、觀察對方手相，有趣的互動環節讓你/妳怦然心動！制服由主辦方提供，妝髮造型可額外加價購！<br>
+          <br>
+          活動中全程會有隨行攝影師，捕捉你們的純愛互動，拍攝成實境電視劇，讓你們能留下永恆的美好回憶
+         </p>
+        </div>
+      </div>
+
+      <div class="mb-8 mb-lg-9 mt-8">
+        <ul class="list-unstyled">
+          <a href="checkout.html" class="d-flex align-items-center justify-content-between border border-dark border-2 px-8 py-7">
+            <li class="fs-5 fs-sm-3 fs-lg-1">TICKET</li>
+            <li class="fs-7 fs-sm-5 fs-lg-4">購票資訊</li>
+          </a>
+        </ul>
+      </div>
+
+      <div>
+        <table class="table table-hover">
+          <thead>
+            <tr class="postion-relative">
+              <th class="col-lg-3">活動日期</th>
+              <th class="col-lg-4">票種</th>
+              <th class="col-lg-4">票價</th>
+              <th class="col-lg-2">購票</th>
+            </tr>
+          </thead>
+          <tbody class="border-top">
+            <tr class="font-TC align-middle">
+              <th scope="row p-3">2023/5/12</th>
+              <td>普通票</td>
+              <td class="p-4">$600</td>
+              <td>
+                <a href="checkout.html" class="border border-1 px-4 py-1 text-nowrap">立即購票</a>
+              </td>
+            </tr>
+            <tr class="font-TC align-middle">
+              <th scope="row p-3">2023/5/12</th>
+              <td>普通票</td>
+              <td class="p-4">$600</td>
+              <td>
+                <a href="checkout.html" class="border border-1 px-4 py-1 text-nowrap">立即購票</a>
+              </td>
+            </tr>
+            <tr class="font-TC align-middle">
+              <th scope="row p-3">2023/5/12</th>
+              <td>普通票</td>
+              <td class="p-4">$600</td>
+              <td>
+                <a href="checkout.html" class="border border-1 px-4 py-1 text-nowrap">立即購票</a>
+              </td>
+            </tr>
+            <tr class="font-TC align-middle">
+              <th scope="row p-3">2023/5/12</th>
+              <td>普通票</td>
+              <td class="p-4">$600</td>
+              <td>
+                <a href="checkout.html" class="border border-1 px-4 py-1 text-nowrap">立即購票</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </section>
+
+
+    <footer class="text-center border-top border-3 mt-60">
+    <div class="container">
+        <p class="font-TC fs-8 fs-lg-6 py-8">© 7TAO七逃. All Rights Reserved</p>
+    </div>
+</footer>
+  
+  <!-- JavaScript Bundle with Popper -->
+  </body>
+</html>
+ 
